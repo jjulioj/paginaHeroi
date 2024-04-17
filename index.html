@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Heródex</title>
+    <script src="js/script.js"></script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header, .footer {
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #f4f4f4;
+        }
+
+        #conteudo-pokemon {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .card {
+            width: calc(25% - 40px); 
+            margin: 10px;
+            border: 1px solid grey;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            color: blue;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .grama {
+            background-color: #defde0;
+        }
+
+        .fogo {
+            background-color: #fddfdf;
+        }
+    </style>
+</head>
+<body onload="carregarHerois()">
+    <h1 class="header">Lista de Heróis</h1>
+    <div id="conteudo-pokemon"></div>
+    <h1 class="footer">Final da Lista</h1>
+</body>
+</html>
